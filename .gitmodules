@@ -1,3 +1,6 @@
 [submodule "puppi"]
 	path = puppi
 	url = git@github.com:example42/puppi2.git
+[submodule "stdlib"]
+	path = stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
