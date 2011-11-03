@@ -7,3 +7,6 @@
 [submodule "foo"]
 	path = foo
 	url = git@github.com:example42/puppet-foo2.git
+[submodule "openssh"]
+	path = openssh
+	url = git@github.com:example42/puppet-openssh.git
