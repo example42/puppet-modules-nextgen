@@ -1,45 +1,45 @@
-# Class: foo::install
+# Class: foo-app::install
 #
-# This class installs foo
+# This class installs foo-app
 #
 # == Variables
 # 
-# Refer to foo class for the variables defined here.
+# Refer to foo-app class for the variables defined here.
 #
 # == Usage 
 # 
-# This class is not intended to be used directly. It's automatically included by foo
+# This class is not intended to be used directly. It's automatically included by foo-app
 #
-class foo::install inherits foo {
+class foo-app::install inherits foo-app {
 
   case $install {
 
     package: {
-      package { "foo":
-        name   => "${foo::package}",
-        ensure => "${foo::manage_package}",
+      package { "foo-app":
+        name   => "${foo-app::package}",
+        ensure => "${foo-app::manage_package}",
       }
     }
 
     source: {
-      netinstall { "netinstall_foo":
-        url                 => "${foo::install_source}",
-        destination_dir     => "${foo::install_destination}",
-        preextract_command  => "${foo::install_precommand}",
-        postextract_command => "${foo::install_postcommand}",
+      netinstall { "netinstall_foo-app":
+        url                 => "${foo-app::install_source}",
+        destination_dir     => "${foo-app::install_destination}",
+        preextract_command  => "${foo-app::install_precommand}",
+        postextract_command => "${foo-app::install_postcommand}",
       }
     }
 
     puppi: {
-      puppi::project::archive { "foo":
-        source                   => "${foo::install_source}",
-        deploy_root              => "${foo::install_destination}",
-        predeploy_customcommand  => "${foo::install_precommand}",
-        postdeploy_customcommand => "${foo::install_postcommand}",
+      puppi::project::archive { "foo-app":
+        source                   => "${foo-app::install_source}",
+        deploy_root              => "${foo-app::install_destination}",
+        predeploy_customcommand  => "${foo-app::install_precommand}",
+        postdeploy_customcommand => "${foo-app::install_postcommand}",
         report_email             => "root",
         auto_deploy              => "once",
         enable                   => true,
       }
     }
-
+  }
 }
