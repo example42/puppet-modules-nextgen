@@ -1,21 +1,21 @@
-# Class: foo-app::params
+# Class: foo_webapp::params
 #
-# This class defines default parameters used by the main module class foo-app
+# This class defines default parameters used by the main module class foo_webapp
 # Operating Systems differences in names and paths are addressed here 
 #
 # == Variables
 # 
-# Refer to foo-app class for the variables defined here.
+# Refer to foo_webapp class for the variables defined here.
 #
 # == Usage 
 # 
 # This class is not intended to be used directly. It may be imported or inherited by other classes
 #
-class foo-app::params {
+class foo_webapp::params {
 
   $install = "package"
 
-  $install_source = "http://download.foo-app.com/foo-app.tar.gz"
+  $install_source = "http://download.foo_webapp.com/foo_webapp.tar.gz"
  
   $install_destination = $operatingsystem ? {
     /(?i:Debian|Ubuntu|Mint)/ => "/var/www",
@@ -32,15 +32,15 @@ class foo-app::params {
   $url_pattern         = "OK"
 
   $package = $operatingsystem ? {
-    default => "foo-app",
+    default => "foo_webapp",
   }
 
   $config_dir = $operatingsystem ? {
-    default => "/etc/foo-app",
+    default => "/etc/foo_webapp",
   }
 
   $config_file = $operatingsystem ? {
-    default => "/etc/foo-app/foo-app.conf",
+    default => "/etc/foo_webapp/foo_webapp.conf",
   } 
 
   $config_file_mode = $operatingsystem ? { 
@@ -56,7 +56,7 @@ class foo-app::params {
   }
 
   $data_dir = $operatingsystem ? {
-    default => "/var/lib/foo-app",
+    default => "/var/lib/foo_webapp",
   }
 
   $log_dir = $operatingsystem ? {
@@ -64,7 +64,7 @@ class foo-app::params {
   }
 
   $log_file = $operatingsystem ? {
-    default => "/var/log/foo-app.log",
+    default => "/var/log/foo_webapp.log",
   }
 
 }
