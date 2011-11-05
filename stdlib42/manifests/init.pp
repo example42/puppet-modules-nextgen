@@ -1,7 +1,7 @@
 
 import "*.pp"
 
-class 42lib {
+class stdlib42 {
 # Some General Use Variables
 
 # Calculate OS version (without using lsb facts)

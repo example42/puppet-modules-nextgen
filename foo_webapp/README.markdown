@@ -1,33 +1,22 @@
 # Puppet module: foo_webapp
 
-This module installs the foo_webapp web application.
-You need to configure separately the Web or Application Server that is going to host foo_webapp
-
+This is a Puppet foo_webapp module from the second generation of Example42 Puppet Modules.
+Made by Alessandro Franceschi / Lab42 - http://www.example42.com
+Released under the terms of Apache 2 License.
+Check Modulefile for dependencies.
 
 ## USAGE - Basic management
 * Install foo_webapp with default settings
 
         class { "foo_webapp": }
 
-* Disable foo_webapp service.
-
-        class { "foo_webapp":
-          disable => true,
-        }
-
-* Disable foo_webapp service at boot time, but don't stop if is running.
-
-        class { "foo_webapp":
-          disableboot => true,
-        }
-
-* Remove foo_webapp package
+* Remove foo_webapp
 
         class { "foo_webapp":
           absent => true,
         }
 
-* Define foo_webapp installation method: Valid values for install => are "package" (default), "source" and puppi.
+* Define foo_webapp installation method: Valid values for install => are "package" (default), "source" and "puppi".
 
         class { "foo_webapp":
           install => "source",
@@ -56,7 +45,14 @@ You need to configure separately the Web or Application Server that is going to 
 * Use custom sources for main config file 
 
         class { "foo_webapp":
-          source => [ "puppet:///modules/lab42/foo_webapp/foo_webapp.conf-$hostname" , "puppet:///modules/lab42/foo_webapp/foo_webapp.conf" ], 
+          source => [ "puppet:///modules/lab42/foo_webapp/foo_webapp.conf-${hostname}" , "puppet:///modules/lab42/foo_webapp/foo_webapp.conf" ], 
+        }
+
+* Use custom source directory for the whole configuration dir
+
+        class { "foo_webapp":
+          source_dir       => "puppet:///modules/lab42/foo_webapp/conf/",
+          source_dir_purge => false, # Set to true to purge any existing file not present in $source_dir
         }
 
 * Use custom template for main config file 
@@ -84,29 +80,18 @@ You need to configure separately the Web or Application Server that is going to 
 
 
 ## USAGE - Example42 extensions management 
-* Activate puppi (reccomended, but disabled by default)
+* Activate puppi (recommended, but disabled by default)
   Note that this option requires the usage of Example42 puppi module
 
         class { "foo_webapp": 
           puppi    => true,
         }
 
-* Activate automatic monitoring (reccomended, but disabled by default)
+* Activate automatic monitoring (recommended, but disabled by default)
   This option requires the usage of Example42 monitor and relevant monitor tools modules
 
         class { "foo_webapp":
           monitor      => true,
           monitor_tool => [ "nagios" , "monit" , "munin" ],
         }
-
-* Activate automatic firewalling 
-  This option requires the usage of Example42 firewall and relevant firewall tools modules
-
-        class { "foo_webapp":       
-          firewall      => true,
-          firewall_tool => "iptables",
-          firewall_src  => "10.42.0.0/24",
-          firewall_dst  => "$ipaddress_eth0",
-        }
-
 

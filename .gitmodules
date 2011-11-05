@@ -10,3 +10,6 @@
 [submodule "openssh"]
 	path = openssh
 	url = git@github.com:example42/puppet-openssh.git
+[submodule "solr"]
+	path = solr
+	url = git@github.com:example42/puppet-solr.git

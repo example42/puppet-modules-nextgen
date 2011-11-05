@@ -4,7 +4,7 @@ class role::common {
   include stdlib
 
   # Example42 Common Libraries
-  include 42lib
+  include stdlib42
 
   # Puppi
   include puppi

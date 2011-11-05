@@ -5,7 +5,7 @@ class role::test {
   class { "solr" :
     install    => "package",
     source_dir => "puppet:///modules/example42/solr/",
-#    puppi      => true,
+    puppi      => true,
   }
 
 
