@@ -9,7 +9,7 @@ Run it from the directory that contains the foo module (moduledir).
 By default it uses the "foo" module as template. Specify -t <source_module> to use a different template.
 
 Example:
-$0 -t foo-app
+$0 -t foo_webapp
 
 EOF
 }
