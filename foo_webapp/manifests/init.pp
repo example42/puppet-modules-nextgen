@@ -211,6 +211,7 @@ class foo_webapp (
 
   # Provide puppi data, if enabled ( puppi => true )
   if $foo_webapp::puppi == true { 
+    $puppivars=get_class_args()
     file { "puppi_foo_webapp":
       path    => "${settings::vardir}/puppi/foo_webapp",
       mode    => "0644",
@@ -218,7 +219,7 @@ class foo_webapp (
       group   => "root",
       ensure  => "${foo_webapp::manage_file}",
       require => Class["puppi"],         
-      content => template("foo_webapp/puppi.erb"),
+      content => inline_template("<%= puppivars.to_yaml %>"),
     }
   }
 

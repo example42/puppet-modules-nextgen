@@ -1,8 +1,11 @@
 # Puppet module: foo_webapp
 
 This is a Puppet foo_webapp module from the second generation of Example42 Puppet Modules.
+
 Made by Alessandro Franceschi / Lab42 - http://www.example42.com
+
 Released under the terms of Apache 2 License.
+
 Check Modulefile for dependencies.
 
 ## USAGE - Basic management
