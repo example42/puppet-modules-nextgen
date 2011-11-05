@@ -17,12 +17,14 @@ This module abstracts the firewalling definitions for an host or application, in
 
 ## Usage
 In order to activate automatic firewalling for the port(s) opened by the service(s) provided by a module you have to pass, at least, these parameters:
+
         class { "foo":
           firewall      => true,
           firewall_tool => "iptables",
           firewall_src  => "10.42.0.0/24",
           firewall_dst  => "$ipaddress_eth0",
         }
+
 where firewall_tool is a string or an array of the firewalling tools you want to activate (curretly is supposed only local iptables firewalling with Example42's iptables module). $firewall_src is the source ip address / netmask (may be 0.0.0.0/0) to allow access, and $firewall_dst is the destination address (may be a facter variable.
 
 ## Dependencies

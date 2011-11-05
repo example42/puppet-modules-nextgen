@@ -23,13 +23,16 @@ It's used, as an option disabled by default, in the Example42 modules and provid
 
 ## Usage
 In order to activate automatic monitoring for the resources defined in a class you have to pass, at least, these parameters:
+
         class { "foo":
           monitor      => true,
           monitor_tool => [ "nagios" , "monit" , "munin" ],
         }
+
 where monitor_tool is an array of the monitor tools you want to activate to automatically check the resources provided the defined class.
 
 In each module for applications the provide network services, by default, it's activated the monitoring to the listening port and the running process, with a syntax like this:
+
         monitor::port { "foo_${foo::protocol}_${foo::port}": 
           protocol => "${foo::protocol}",
           port     => "${foo::port}",
@@ -47,6 +50,7 @@ In each module for applications the provide network services, by default, it's a
         }
 
 Modules related to web applications generally have a monitor::url define that checks for a specifyed pattern string in an given url:
+
         monitor::url { "foo_webapp_url":
           url     => "${foo_webapp::url_check}",
           pattern => "${foo_webapp::url_pattern}",
@@ -59,9 +63,11 @@ Modules related to web applications generally have a monitor::url define that ch
 ## Monitor module layout 
 This monitor module is to be considered a (working) implementation, entirely based on Puppet's DSL of a (strongly needed) monitor abstraction type.
 The generic monitor defines are placed in files like:
+
         monitor/manifests/process.pp
         monitor/manifests/port.pp
         monitor/manifests/url.pp
+
 here according to the monitor_tool requested are called some specific defines relevant to the requested monitoring tools.
 Note that here you can choose different implementations of the a specific module, so you are free to change the whole module to be used for a specific monitoring tool editing just these few files.  
 
