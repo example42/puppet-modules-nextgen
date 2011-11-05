@@ -1,3 +1,5 @@
+# General settings for standard types
+Exec { path => "/bin:/sbin:/usr/bin:/usr/sbin" }
 
 import "*.pp"
 
