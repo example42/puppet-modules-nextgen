@@ -12,17 +12,19 @@ class stdlib42 {
 
 # Set OS name (for Ubuntu and Debian without using lsbdistcodename
     $osname=$operatingsystemrelease ? {
-        /^4/  => "etch",
-        /^5/  => "lenny",
-        /^6/  => "squeeze",
-        "8.04"  => "hardy",
-        "8.10"  => "intrepid",
-        "9.04"  => "jaunty",
-        "9.10"  => "karmic",
-        "10.04" => "lucid",
-        "10.10" => "meerkat",
-        "11.04" => "natty",
-        "11.10" => "oneiric",
+        /^4/       => "etch",
+        /^5/       => "lenny",
+        /^lenny/   => "lenny",
+        /^6/       => "squeeze",
+        /^squeeze/ => "squeeze",
+        "8.04"     => "hardy",
+        "8.10"     => "intrepid",
+        "9.04"     => "jaunty",
+        "9.10"     => "karmic",
+        "10.04"    => "lucid",
+        "10.10"    => "meerkat",
+        "11.04"    => "natty",
+        "11.10"    => "oneiric",
     }
 
 
