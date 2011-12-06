@@ -13,8 +13,11 @@
 #
 class foo_webapp::params {
 
+  # Default installation type depends on OS package availability
   $install = "package"
 
+  # Install source from the upstream provider is updated to module's last update time
+  # You may need to change this: use the "install_source" parameter of the foo_webapp class
   $install_source = "http://download.foo_webapp.com/foo_webapp.tar.gz"
  
   $install_destination = $operatingsystem ? {
@@ -36,7 +39,7 @@ class foo_webapp::params {
   }
 
   $config_dir = $operatingsystem ? {
-    default => "/etc/foo_webapp",
+    default => "/etc/foo_webapp/conf",
   }
 
   $config_file = $operatingsystem ? {

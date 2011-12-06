@@ -12,7 +12,7 @@
 #
 class foo_webapp::install inherits foo_webapp {
 
-  case $install {
+  case $foo_webapp::install {
 
     package: {
       package { "foo_webapp":
@@ -37,9 +37,11 @@ class foo_webapp::install inherits foo_webapp {
         predeploy_customcommand  => "${foo_webapp::install_precommand}",
         postdeploy_customcommand => "${foo_webapp::install_postcommand}",
         report_email             => "root",
-        auto_deploy              => "once",
+        auto_deploy              => true,
         enable                   => true,
       }
     }
+
   }
+
 }

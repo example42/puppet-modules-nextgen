@@ -8,12 +8,13 @@ Released under the terms of Apache 2 License.
 
 Check Modulefile for dependencies.
 
+
 ## USAGE - Basic management
 * Install foo_webapp with default settings
 
         class { "foo_webapp": }
 
-* Remove foo_webapp
+* Remove foo_webapp 
 
         class { "foo_webapp":
           absent => true,
@@ -48,14 +49,7 @@ Check Modulefile for dependencies.
 * Use custom sources for main config file 
 
         class { "foo_webapp":
-          source => [ "puppet:///modules/lab42/foo_webapp/foo_webapp.conf-${hostname}" , "puppet:///modules/lab42/foo_webapp/foo_webapp.conf" ], 
-        }
-
-* Use custom source directory for the whole configuration dir
-
-        class { "foo_webapp":
-          source_dir       => "puppet:///modules/lab42/foo_webapp/conf/",
-          source_dir_purge => false, # Set to true to purge any existing file not present in $source_dir
+          source => [ "puppet:///modules/lab42/foo_webapp/foo_webapp.conf-$hostname" , "puppet:///modules/lab42/foo_webapp/foo_webapp.conf" ], 
         }
 
 * Use custom template for main config file 

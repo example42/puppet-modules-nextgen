@@ -15,6 +15,7 @@
 #
 # [*install_source*]
 #   The URL from where to retrieve the source tarball/zip. Used if install => "source" or "puppi"
+#   Default is from upstream developer site. Update the version when needed.
 #
 # [*install_destination*]
 #   The base path where to extract the source tarball/zip. Used if install => "source" or "puppi"
@@ -51,8 +52,8 @@
 #   the specified source (parameter: source => $source_dir , recurse => true)
 #
 # [*source_dir_purge*]
-#   If set to true (default false)  the existing configuration directory is mirrored with the 
-#   content retrieved from source_dir. (source => $source_dir , recurse => true , purge => true) 
+#   If set to true all the existing configuration directory is overriden by the 
+#   content retrived from source_dir. (source => $source_dir , recurse => true , purge => true) 
 #
 # [*template*]
 #   Sets the path to the template to be used as content for main configuration file
@@ -149,7 +150,7 @@ class foo_webapp (
   $log_file            = $foo_webapp::params::log_file 
   ) inherits foo_webapp::params {
 
-  validate_bool($source_dir_purge , $absent , $monitor , $puppi , $debug)
+  validate_bool($source_dir_purge, $absent , $monitor , $puppi , $debug)
 
   # Calculations of some variables used in the module
   $manage_package = $foo_webapp::absent ? {
@@ -191,7 +192,7 @@ class foo_webapp (
     },
   }
 
-  # The whole foo_webapp configuration directory can be recursively overriden
+  # Whole foo_webapp configuration directory can be recursively overriden
   if $foo_webapp::source_dir {
     file { "foo_webapp.dir":
       path    => "${foo_webapp::config_dir}",
