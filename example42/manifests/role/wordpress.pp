@@ -2,7 +2,7 @@
 #
 # This a role for an all-in-one wordpress (complete LAMP stack)
 #
-class role::wordpress {
+class example42::role::wordpress {
 
   include example42::baseline::common
 
