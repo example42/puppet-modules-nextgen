@@ -1,3 +1,4 @@
 vendor/gems/
 .bundle/
-
+Gemfile
+Gemfile.lock
