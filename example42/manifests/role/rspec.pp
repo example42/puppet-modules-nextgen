@@ -7,7 +7,7 @@ class example42::role::rspec {
   include stdlib
   include stdlib42
 
-  class { "openssh": 
+#  class { "openssh": 
 #    my_class          => undef ,
 #    source            => undef ,
 #    source_dir        => '' ,
@@ -28,6 +28,6 @@ class example42::role::rspec {
 #    firewall_dst      => undef ,
 #    debug             => false ,
 #    audit_only        => false ,
-  }
+#  }
 
 }

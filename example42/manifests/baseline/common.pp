@@ -10,14 +10,15 @@ class example42::baseline::common {
   # Example42 Common Libraries
   include stdlib42
 
-  # Puppi
+  # Puppi
   include puppi
 
   # OpenSSH setup 
-  class { "openssh" :
+  class { "openssh":  
+    monitor => true,
 #    template => "example42/openssh/sshd_config.erb",
-#    source => [ "puppet:///modules/example42/openssh/sshd_config-${hostname}" , "puppet:///modules/example42/openssh/sshd_config" ], 
-#    my_class => "example42::openssh",
+#    source => [ "puppet:///modules/example42/openssh/sshd_config-${hostname}" , "puppet:///modules/example42/openssh/ss
+#    my_class => "openssh::example42", 
   }
 
 }
