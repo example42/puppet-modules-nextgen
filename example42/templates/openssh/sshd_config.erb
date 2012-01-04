@@ -3,10 +3,17 @@
 Port <%= port %>
 #AddressFamily any
 
-<% if scope.lookupvar("openssh::options['ListenAddress']") then -%>
+<% if scope.lookupvar("openssh::options['ListenAddress']") != "" then -%>
 ListenAddress <%= options['ListenAddress'] %>
+<% else -%>
+ListenAddress 0.0.0.0
 <% end -%>
+
+<% if scope.lookupvar("openssh::options['PermitRootLogin']") != "" then -%>
 PermitRootLogin <%= options['PermitRootLogin'] %>
+<% else -%>
+PermitRootLogin yes
+<% end -%>
 
 Protocol 2
 

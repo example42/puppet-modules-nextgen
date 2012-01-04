@@ -16,7 +16,9 @@ class example42::baseline::common {
   # OpenSSH setup 
   class { "openssh":  
     monitor => true,
-#    template => "example42/openssh/sshd_config.erb",
+    firewall => true,
+    debug => true,
+    template => "example42/openssh/sshd_config.erb",
 #    source => [ "puppet:///modules/example42/openssh/sshd_config-${hostname}" , "puppet:///modules/example42/openssh/ss
 #    my_class => "openssh::example42", 
   }
