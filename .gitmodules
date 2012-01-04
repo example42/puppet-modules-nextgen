@@ -4,9 +4,6 @@
 [submodule "stdlib"]
 	path = stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
-[submodule "foo"]
-	path = foo
-	url = https://example42@github.com/example42/puppet-foo2.git
 [submodule "openssh"]
 	path = openssh
 	url = https://example42@github.com/example42/puppet-openssh.git
