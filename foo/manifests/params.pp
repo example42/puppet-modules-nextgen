@@ -17,7 +17,7 @@ class foo::params {
   ### Application related parameters
 
   $package = $::operatingsystem ? {
-    default => 'foo-server',
+    default => 'foo',
   }
 
   $service = $::operatingsystem ? {

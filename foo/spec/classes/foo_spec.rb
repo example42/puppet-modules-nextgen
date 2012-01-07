@@ -7,40 +7,79 @@ describe 'foo' do
   let(:facts) { { :ipaddress => '10.42.42.42' } }
 
   describe 'Test standard installation' do
-    let(:params) { { } }
-
     it { should contain_package('foo').with_ensure('present') }
     it { should contain_service('foo').with_ensure('running') }
     it { should contain_service('foo').with_enable('true') }
     it { should contain_file('foo.conf').with_ensure('present') }
   end
 
-  describe 'Test decommissioning - absent' do
-    let(:params) { {:absent => true} }
+  describe 'Test standard installation with monitoring and firewalling' do
+    let(:params) { {:monitor => true , :firewall => true, :port => '42' } }
 
-    it { should contain_package('foo').with_ensure('absent') }
-    it { should contain_service('foo').with_ensure('stopped') }
-    it { should contain_service('foo').with_enable('false') }
-    it { should contain_file('foo.conf').with_ensure('absent') }
+    it { should contain_package('foo').with_ensure('present') }
+    it { should contain_service('foo').with_ensure('running') }
+    it { should contain_service('foo').with_enable('true') }
+    it { should contain_file('foo.conf').with_ensure('present') }
+    it 'should monitor the process' do
+      content = catalogue.resource('monitor::process', 'foo_process').send(:parameters)[:enable]
+      content.should == true
+    end
+    it 'should place a firewall rule' do
+      content = catalogue.resource('firewall', 'foo_tcp_42').send(:parameters)[:enable]
+      content.should == true
+    end
+  end
+
+  describe 'Test decommissioning - absent' do
+    let(:params) { {:absent => true, :monitor => true , :firewall => true, :port => '42'} }
+
+    it 'should remove Package[foo]' do should contain_package('foo').with_ensure('absent') end 
+    it 'should stop Service[foo]' do should contain_service('foo').with_ensure('stopped') end
+    it 'should not enable at boot Service[foo]' do should contain_service('foo').with_enable('false') end
+    it 'should remove foo configuration file' do should contain_file('foo.conf').with_ensure('absent') end
+    it 'should not monitor the process' do
+      content = catalogue.resource('monitor::process', 'foo_process').send(:parameters)[:enable]
+      content.should == false
+    end
+    it 'should remove a firewall rule' do
+      content = catalogue.resource('firewall', 'foo_tcp_42').send(:parameters)[:enable]
+      content.should == false
+    end
   end
 
   describe 'Test decommissioning - disable' do
-    let(:params) { {:disable => true} }
+    let(:params) { {:disable => true, :monitor => true , :firewall => true, :port => '42'} }
 
     it { should contain_package('foo').with_ensure('present') }
-    it { should contain_service('foo').with_ensure('stopped') }
-    it { should contain_service('foo').with_enable('false') }
+    it 'should stop Service[foo]' do should contain_service('foo').with_ensure('stopped') end
+    it 'should not enable at boot Service[foo]' do should contain_service('foo').with_enable('false') end
     it { should contain_file('foo.conf').with_ensure('present') }
+    it 'should not monitor the process' do
+      content = catalogue.resource('monitor::process', 'foo_process').send(:parameters)[:enable]
+      content.should == false
+    end
+    it 'should remove a firewall rule' do
+      content = catalogue.resource('firewall', 'foo_tcp_42').send(:parameters)[:enable]
+      content.should == false
+    end
   end
 
   describe 'Test decommissioning - disableboot' do
-    let(:params) { {:disableboot => true} }
+    let(:params) { {:disableboot => true, :monitor => true , :firewall => true, :port => '42'} }
   
     it { should contain_package('foo').with_ensure('present') }
     it { should_not contain_service('foo').with_ensure('present') }
     it { should_not contain_service('foo').with_ensure('absent') }
-    it { should contain_service('foo').with_enable('false') }
+    it 'should not enable at boot Service[foo]' do should contain_service('foo').with_enable('false') end
     it { should contain_file('foo.conf').with_ensure('present') }
+    it 'should not monitor the process locally' do
+      content = catalogue.resource('monitor::process', 'foo_process').send(:parameters)[:enable]
+      content.should == false
+    end
+    it 'should keep a firewall rule' do
+      content = catalogue.resource('firewall', 'foo_tcp_42').send(:parameters)[:enable]
+      content.should == true
+    end
   end 
 
   describe 'Test customizations - template' do
@@ -93,7 +132,7 @@ describe 'foo' do
     end
   end
 
-  describe 'Test Monitoring Integration' do
+  describe 'Test Monitoring Tools Integration' do
     let(:params) { {:monitor => true, :monitor_tool => "puppi" } }
 
     it 'should generate monitor defines' do
@@ -102,7 +141,7 @@ describe 'foo' do
     end
   end
 
-  describe 'Test Firewall Integration' do
+  describe 'Test Firewall Tools Integration' do
     let(:params) { {:firewall => true, :firewall_tool => "iptables" , :protocol => "tcp" , :port => "42" } }
 
     it 'should generate correct firewall define' do
@@ -111,4 +150,3 @@ describe 'foo' do
     end
   end
 end
-

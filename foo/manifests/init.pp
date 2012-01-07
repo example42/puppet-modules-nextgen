@@ -270,12 +270,17 @@ class foo (
     default => 'present',
   }
 
-  $manage_monitor = $foo::absent ? {
-    true    => false ,
-    default => $foo::disable ? {
-      true    => false,
-      default => true,
-    }
+  # If $foo::disable == true we dont check foo on the local system
+  if $foo::absent == true or $foo::disable == true or $foo::disableboot == true {
+    $manage_monitor = false
+  } else {
+    $manage_monitor = true
+  }
+
+  if $foo::absent == true or $foo::disable == true {
+    $manage_firewall = false
+  } else {
+    $manage_firewall = true
   }
 
   $manage_audit = $foo::audit_only ? {
@@ -393,6 +398,7 @@ class foo (
       action      => 'allow',
       direction   => 'input',
       tool        => $foo::firewall_tool,
+      enable      => $foo::manage_firewall,
     }
   }
 
