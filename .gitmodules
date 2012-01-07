@@ -19,3 +19,6 @@
 [submodule "concat"]
 	path = concat
 	url = https://github.com/ripienaar/puppet-concat
+[submodule "tomcat"]
+	path = tomcat
+	url = https://example42@github.com/example42/puppet-tomcat.git
