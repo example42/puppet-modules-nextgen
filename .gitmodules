@@ -22,3 +22,6 @@
 [submodule "tomcat"]
 	path = tomcat
 	url = https://example42@github.com/example42/puppet-tomcat.git
+[submodule "jenkins"]
+	path = jenkins
+	url = https://example42@github.com/example42/puppet-jenkins.git
