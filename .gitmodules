@@ -1,27 +1,27 @@
 [submodule "puppi"]
 	path = puppi
-	url = https://example42@github.com/example42/puppi.git
+	url = https://github.com/example42/puppi.git
 [submodule "stdlib"]
 	path = stdlib
 	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
 [submodule "openssh"]
 	path = openssh
-	url = https://example42@github.com/example42/puppet-openssh.git
+	url = https://github.com/example42/puppet-openssh.git
 [submodule "solr"]
 	path = solr
-	url = https://example42@github.com/example42/puppet-solr.git
+	url = https://github.com/example42/puppet-solr.git
 [submodule "iptables"]
 	path = iptables
-	url = https://example42@github.com/example42/puppet-iptables.git
+	url = https://github.com/example42/puppet-iptables.git
 [submodule "wordpress"]
 	path = wordpress
-	url = https://example42@github.com/example42/puppet-wordpress.git
+	url = https://github.com/example42/puppet-wordpress.git
 [submodule "concat"]
 	path = concat
 	url = https://github.com/ripienaar/puppet-concat
 [submodule "tomcat"]
 	path = tomcat
-	url = https://example42@github.com/example42/puppet-tomcat.git
+	url = https://github.com/example42/puppet-tomcat.git
 [submodule "jenkins"]
 	path = jenkins
-	url = https://example42@github.com/example42/puppet-jenkins.git
+	url = https://github.com/example42/puppet-jenkins.git
