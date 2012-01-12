@@ -230,65 +230,64 @@ class foo (
   $protocol          = $foo::params::protocol
   ) inherits foo::params {
 
-  validate_bool(  $source_dir_purge ,
-                  $absent ,
-                  $disable ,
-                  $disableboot ,
-                  $monitor ,
-                  $puppi ,
-                  $firewall ,
-                  $debug ,
-                  $audit_only )
+  $bool_source_dir_purge=any2bool($source_dir_purge)
+  $bool_absent=any2bool($absent)
+  $bool_disable=any2bool($disable)
+  $bool_disableboot=any2bool($disableboot)
+  $bool_monitor=any2bool($monitor)
+  $bool_puppi=any2bool($puppi)
+  $bool_firewall=any2bool($firewall)
+  $bool_debug=any2bool($debug)
+  $bool_audit_only=any2bool($audit_only)
 
   ### Definition of some variables used in the module
-  $manage_package = $foo::absent ? {
+  $manage_package = $foo::bool_absent ? {
     true  => 'absent',
     false => 'present',
   }
 
-  $manage_service_enable = $foo::disableboot ? {
+  $manage_service_enable = $foo::bool_disableboot ? {
     true    => false,
-    default => $foo::disable ? {
+    default => $foo::bool_disable ? {
       true    => false,
-      default => $foo::absent ? {
+      default => $foo::bool_absent ? {
         true  => false,
         false => true,
       },
     },
   }
 
-  $manage_service_ensure = $foo::disable ? {
+  $manage_service_ensure = $foo::bool_disable ? {
     true    => 'stopped',
-    default =>  $foo::absent ? {
+    default =>  $foo::bool_absent ? {
       true    => 'stopped',
       default => 'running',
     },
   }
 
-  $manage_file = $foo::absent ? {
+  $manage_file = $foo::bool_absent ? {
     true    => 'absent',
     default => 'present',
   }
 
-  # If $foo::disable == true we dont check foo on the local system
-  if $foo::absent == true or $foo::disable == true or $foo::disableboot == true {
+  if $foo::bool_absent == true or $foo::bool_disable == true or $foo::bool_disableboot == true {
     $manage_monitor = false
   } else {
     $manage_monitor = true
   }
 
-  if $foo::absent == true or $foo::disable == true {
+  if $foo::bool_absent == true or $foo::bool_disable == true {
     $manage_firewall = false
   } else {
     $manage_firewall = true
   }
 
-  $manage_audit = $foo::audit_only ? {
+  $manage_audit = $foo::bool_audit_only ? {
     true  => 'all',
     false => undef,
   }
 
-  $manage_file_replace = $foo::audit_only ? {
+  $manage_file_replace = $foo::bool_audit_only ? {
     true  => false,
     false => true,
   }
@@ -355,7 +354,7 @@ class foo (
 
 
   ### Provide puppi data, if enabled ( puppi => true )
-  if $foo::puppi == true {
+  if $foo::bool_puppi == true {
     $puppivars=get_class_args()
     file { 'puppi_foo':
       ensure  => $foo::manage_file,
@@ -370,7 +369,7 @@ class foo (
 
 
   ### Service monitoring, if enabled ( monitor => true )
-  if $foo::monitor == true {
+  if $foo::bool_monitor == true {
     monitor::port { "foo_${foo::protocol}_${foo::port}":
       protocol => $foo::protocol,
       port     => $foo::port,
@@ -389,7 +388,7 @@ class foo (
 
 
   ### Firewall management, if enabled ( firewall => true )
-  if $foo::firewall == true {
+  if $foo::bool_firewall == true {
     firewall { "foo_${foo::protocol}_${foo::port}":
       source      => $foo::firewall_source,
       destination => $foo::firewall_destination,
@@ -404,7 +403,7 @@ class foo (
 
 
   ### Debugging, if enabled ( debug => true )
-  if $foo::debug == true {
+  if $foo::bool_debug == true {
     file { 'debug_foo':
       ensure  => $foo::manage_file,
       path    => "${settings::vardir}/debug-foo",
