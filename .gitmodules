@@ -34,3 +34,6 @@
 [submodule "firewall"]
 	path = firewall
 	url = https://github.com/example42/puppet-firewall
+[submodule "splunk"]
+	path = splunk
+	url = https://github.com/example42/puppet-splunk.git
