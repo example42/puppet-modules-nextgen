@@ -1,4 +1,4 @@
-# Puppet module: foo
+== Puppet module: foo
 
 This is a Puppet foo module from the second generation of Example42 Puppet Modules.
 
@@ -8,7 +8,7 @@ Released under the terms of Apache 2 License.
 
 Check Modulefile for dependencies.
 
-## GENERAL USAGE
+=== GENERAL USAGE
 This module can be used in 2 ways:
 
 * With the old style "Set variables and include class" pattern:
@@ -51,7 +51,7 @@ The examples use parametrized classes, but for all the parameters you can set a 
 
 For example, the variable "$foo_absent" is equivant to the "absent =>" parameter.
 
-## USAGE - Basic management
+=== USAGE - Basic management
 * Install foo with default settings
 
         class { "foo": }
@@ -81,7 +81,7 @@ For example, the variable "$foo_absent" is equivant to the "absent =>" parameter
         }
 
 
-## USAGE - Overrides and Customizations
+=== USAGE - Overrides and Customizations
 * Use custom sources for main config file 
 
         class { "foo":
@@ -93,7 +93,7 @@ For example, the variable "$foo_absent" is equivant to the "absent =>" parameter
 
         class { "foo":
           source_dir       => "puppet:///modules/lab42/foo/conf/",
-          source_dir_purge => false, # Set to true to purge any existing file not present in $source_dir
+          source_dir_purge => false, # Set to true to purge any existing file not present in $source_dir
         }
 
 * Use custom template for main config file 
@@ -120,7 +120,7 @@ For example, the variable "$foo_absent" is equivant to the "absent =>" parameter
         }
 
 
-## USAGE - Example42 extensions management 
+=== USAGE - Example42 extensions management 
 * Activate puppi (recommended, but disabled by default)
   Note that this option requires the usage of Example42 puppi module
 
