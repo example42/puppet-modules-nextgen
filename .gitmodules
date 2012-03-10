@@ -15,7 +15,7 @@
 	url = https://github.com/example42/puppet-wordpress.git
 [submodule "concat"]
 	path = concat
-	url = https://github.com/ripienaar/puppet-concat
+	url = https://github.com/example42/puppet-concat
 [submodule "tomcat"]
 	path = tomcat
 	url = https://github.com/example42/puppet-tomcat.git
