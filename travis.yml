@@ -1,7 +1,6 @@
 rvm: 1.8.7
-before_script:
-  - cd ../../ ; rm -rf example42/*
-  - git clone --depth=100 --quiet --recursive git://github.com/example42/puppet-modules-nextgen.git example42/puppet-modules-nextgen
+before_install:
+ - git submodule update --init --recursive
 notifications:
   email:
     - al@lab42.it
