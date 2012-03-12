@@ -13,9 +13,6 @@
 [submodule "wordpress"]
 	path = wordpress
 	url = https://github.com/example42/puppet-wordpress.git
-[submodule "concat"]
-	path = concat
-	url = https://github.com/example42/puppet-concat
 [submodule "tomcat"]
 	path = tomcat
 	url = https://github.com/example42/puppet-tomcat.git
@@ -64,3 +61,6 @@
 [submodule "openntpd"]
 	path = openntpd
 	url = https://github.com/example42/puppet-openntpd
+[submodule "concat"]
+	path = concat
+	url = https://github.com/example42/puppet-concat
