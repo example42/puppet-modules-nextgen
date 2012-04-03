@@ -76,3 +76,6 @@
 [submodule "rvm"]
 	path = rvm
 	url = https://github.com/example42/puppet-rvm
+[submodule "resolver"]
+	path = resolver
+	url = https://github.com/example42/puppet-resolver.git
