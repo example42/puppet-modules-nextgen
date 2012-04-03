@@ -73,3 +73,6 @@
 [submodule "jboss"]
 	path = jboss
 	url = https://github.com/example42/puppet-jboss.git
+[submodule "rvm"]
+	path = rvm
+	url = https://github.com/example42/puppet-rvm
