@@ -53,15 +53,13 @@ There are some special modules or directories with different functions:
 
 * Example42-tools/ is actually not a module. It contains scripts useful for maintenance of the modules. No Puppet code there.
 
+* Example42-documentation/ contains documentation about Example42 Puppet modules and their usage.
+
 * example42/ is a sample project/customer/site specific module. It contains files and subclasses specific to the Example42 test lab. Here are supposed to be placed all the customizations, and ideally this module (or the equivalent with your company name) is one of the few parts where to make changes. 
 
 * foo/ and foo_whatever/ are sample template modules that are used for scaffolding new modules (that then are customized and enriched according to the specific application)
 
-* stdlib/ is PuppetLabs standard set of libraries. A collection of useful resources and functions that are used in the Example42 modules. This is a required prerequite for all the modules.
-
-* stdlib42/ is a set of fuctions and resources specific to Example42 modules. Also this module is a common prerequisite.
-
-* puppi/ is an Example42 Puppet module that can be used to automate and simplify the deployment of (web) applications and provides a CLI command that exposes most of the information that Puppet has (and defines) about the system 
+* puppi/ is an Example42 Puppet module that can be used to automate and simplify the deployment of (web) applications and provides a CLI command that exposes most of the information that Puppet has (and defines) about the system. Puppi is a required dependency for all the Example42 modules because it contains some functions used by them, BUT you are not forced to use it. You just have it among hour modules to retrieve (via pluginsync) the common functions.
 
 * monitor/ is an Example42 "meta-module" used for monitoring abstraction. It contains the definitions to use different monitor tools for a set of common resources
 
