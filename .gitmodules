@@ -85,3 +85,6 @@
 [submodule "Example42-documentation"]
 	path = Example42-documentation
 	url = https://github.com/example42/Example42-documentation.git
+[submodule "orientdb"]
+	path = orientdb
+	url = https://github.com/example42/puppet-orientdb
