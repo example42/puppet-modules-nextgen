@@ -88,3 +88,6 @@
 [submodule "orientdb"]
 	path = orientdb
 	url = https://github.com/example42/puppet-orientdb
+[submodule "openvpn"]
+	path = openvpn
+	url = https://github.com/example42/puppet-openvpn
