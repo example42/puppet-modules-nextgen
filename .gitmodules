@@ -91,3 +91,18 @@
 [submodule "openvpn"]
 	path = openvpn
 	url = https://github.com/example42/puppet-openvpn
+[submodule "maven"]
+	path = maven
+	url = https://github.com/example42/puppet-maven
+[submodule "wget"]
+	path = wget
+	url = https://github.com/example42/puppet-wget
+[submodule "puppetdb"]
+	path = puppetdb
+	url = https://github.com/example42/puppet-puppetdb
+[submodule "postgresql"]
+	path = postgresql
+	url = https://github.com/example42/puppet-postgresql
+[submodule "puppet-dashboard"]
+	path = puppet-dashboard
+	url = https://github.com/example42/puppet-dashboard
