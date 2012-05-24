@@ -109,3 +109,6 @@
 [submodule "puppetdashboard"]
 	path = puppetdashboard
 	url = https://github.com/example42/puppet-puppetdashboard
+[submodule "sudo"]
+	path = sudo
+	url = https://github.com/example42/puppet-sudo
