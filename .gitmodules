@@ -127,3 +127,6 @@
 [submodule "php"]
 	path = php
 	url = https://github.com/example42/puppet-php
+[submodule "yum"]
+	path = yum
+	url = https://github.com/example42/puppet-yum
