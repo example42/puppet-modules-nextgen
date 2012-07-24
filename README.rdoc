@@ -15,7 +15,15 @@ To update your local copy with the upstream version:
         git pull origin master
         git submodule init
         git submodule update
+
+If you want to force an update on each submodule, even if not tracked on the main repo:
+
         git submodule foreach git pull origin master
+
+The above commands (excluded the first cd and included the last) are done by the script:
+
+        Example42-tools/sync.sh
+
 
 == FEATURES
 
@@ -46,9 +54,20 @@ The main features of Example42 Puppet modules (second generation):
 * Based on common "foo" templates for easy scaffolding on the modules.
 
 
+== DOCUMENTATION
+
+You can find more documentation in the {Example42-documentation}[https://github.com/example42/Example42-documentation] directory.
+
+Some Usage examples are in the {example42}[https://github.com/example42/example42] module.
+
+A presentation about the features of NextGen modules: {Puppet Modules: A Holistic approach}[http://www.slideshare.net/Alvagante/puppet-modules-a-holistic-approach-geneva].
+
+An introductory Blog Post: {The next generation of Example42 Puppet modules}[http://example42.com/?q=NextGen].
+
+
 == SPECIAL MODULES 
 
-Generally there's a module for each application and each module is a separated git submodule than can be indipendently retrived from GitHub.
+Generally there's a module for each application and each module is a separated git submodule than can be indipendently retrieved from GitHub.
 There are some special modules or directories with different functions:
 
 * Example42-tools/ is actually not a module. It contains scripts useful for maintenance of the modules. No Puppet code there.
@@ -64,4 +83,13 @@ There are some special modules or directories with different functions:
 * monitor/ is an Example42 "meta-module" used for monitoring abstraction. It contains the definitions to use different monitor tools for a set of common resources
 
 * firewall/ is an Example42 "meta-module" used for firewalling abstraction.
+
+
+== CONTINUOUS TESTING
+
+NextGen modules are tested via Rspec, puppet-lint and puppet doc.
+
+Example42 Jenkins: http://www.example42.com/jenkins/
+
+Travis (NextGen only set) {<img src="http://travis-ci.org/example42/puppet-modules-nextgen.png"/>}[http://travis-ci.org/#!/example42/puppet-modules-nextgen]
 
