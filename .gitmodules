@@ -157,3 +157,6 @@
 [submodule "rsyncssh"]
 	path = rsyncssh
 	url = https://github.com/example42/puppet-rsyncssh
+[submodule "pupmod-concat"]
+	path = pupmod-concat
+	url = https://github.com/example42/pupmod-concat
