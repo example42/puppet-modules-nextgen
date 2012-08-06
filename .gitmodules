@@ -154,3 +154,6 @@
 [submodule "tartarus"]
 	path = tartarus
 	url = https://github.com/example42/puppet-tartarus
+[submodule "rsyncssh"]
+	path = rsyncssh
+	url = https://github.com/example42/puppet-rsyncssh
