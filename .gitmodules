@@ -166,3 +166,6 @@
 [submodule "mcollective"]
 	path = mcollective
 	url = git://github.com/example42/puppet-mcollective
+[submodule "vagrant"]
+	path = vagrant
+	url = git://github.com/example42/puppet-vagrant
