@@ -2,6 +2,6 @@
 vendor/gems/
 .bundle/
 grandsla/
-scm-server
+secret/
 Gemfile
 Gemfile.lock
