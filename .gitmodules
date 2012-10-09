@@ -172,3 +172,6 @@
 [submodule "logstash"]
 	path = logstash
 	url = https://github.com/example42/puppet-logstash
+[submodule "user"]
+	path = user
+	url = git://github.com/example42/puppet-user
