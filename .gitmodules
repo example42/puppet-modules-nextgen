@@ -175,3 +175,6 @@
 [submodule "user"]
 	path = user
 	url = git://github.com/example42/puppet-user
+[submodule "heartbeat"]
+	path = heartbeat
+	url = git://github.com/example42/puppet-heartbeat
