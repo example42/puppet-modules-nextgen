@@ -178,3 +178,6 @@
 [submodule "heartbeat"]
 	path = heartbeat
 	url = git://github.com/example42/puppet-heartbeat
+[submodule "rsyslog"]
+	path = rsyslog
+	url = git://github.com/example42/puppet-rsyslog
