@@ -22,9 +22,6 @@
 [submodule "monitor"]
 	path = monitor
 	url = git://github.com/example42/puppet-monitor
-[submodule "stdlib42"]
-	path = stdlib42
-	url = git://github.com/example42/puppet-stdlib42
 [submodule "firewall"]
 	path = firewall
 	url = git://github.com/example42/puppet-firewall
