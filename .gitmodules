@@ -178,3 +178,12 @@
 [submodule "rsyslog"]
 	path = rsyslog
 	url = git://github.com/example42/puppet-rsyslog
+[submodule "scmserver"]
+	path = scmserver
+	url = git://github.com/example42/puppet-scmserver
+[submodule "lighttpd"]
+	path = lighttpd
+	url = git://github.com/example42/puppet-lighttpd
+[submodule "tinc"]
+	path = tinc
+	url = git://github.com/example42/puppet-tinc
