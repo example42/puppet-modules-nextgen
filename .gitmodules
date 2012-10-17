@@ -187,3 +187,6 @@
 [submodule "tinc"]
 	path = tinc
 	url = git://github.com/example42/puppet-tinc
+[submodule "vim"]
+	path = vim
+	url = git://github.com/example42/puppet-vim
