@@ -1,7 +1,23 @@
-.gitignore
+# Ruby 
 vendor/gems/
 .bundle/
-grandsla/
-secret/
 Gemfile
 Gemfile.lock
+
+# VIM
+.*.sw[a-z]
+*.un~
+Session.vim
+.netrwhist
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Puppet Modules
+site/
+secret/
+grandsla*
