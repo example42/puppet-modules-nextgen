@@ -196,3 +196,6 @@
 [submodule "sendmail"]
 	path = sendmail
 	url = git://github.com/example42/puppet-sendmail
+[submodule "django"]
+	path = django
+	url = git://github.com/example42/puppet-django
