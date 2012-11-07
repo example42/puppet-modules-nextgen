@@ -199,3 +199,6 @@
 [submodule "django"]
 	path = django
 	url = git://github.com/example42/puppet-django
+[submodule "snmpd"]
+	path = snmpd
+	url = git://github.com/example42/puppet-snmpd
