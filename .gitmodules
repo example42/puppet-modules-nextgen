@@ -202,3 +202,9 @@
 [submodule "snmpd"]
 	path = snmpd
 	url = git://github.com/example42/puppet-snmpd
+[submodule "freeradius"]
+	path = freeradius
+	url = https://github.com/example42/puppet-freeradius
+[submodule "proftpd"]
+	path = proftpd
+	url = https://github.com/example42/puppet-proftpd
