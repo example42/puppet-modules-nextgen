@@ -211,6 +211,6 @@
 [submodule "Example42-templates"]
 	path = Example42-templates
 	url = https://github.com/example42/Example42-templates.git
-[submodule "Example42-tutorial"]
-	path = Example42-tutorial
-	url = https://github.com/example42/Example42-tutorial
+[submodule "Example42-tutorials"]
+	path = Example42-tutorials
+	url = https://github.com/example42/Example42-tutorials
