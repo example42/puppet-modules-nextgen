@@ -24,7 +24,7 @@ The above commands (excluded the first cd and included the last) are done by the
 
         Example42-tools/sync.sh
 
-You can test these modules on a safe environment using the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). Check it out!
+You can test these modules on a safe environment using the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. Check it out!
 
 
 == FEATURES
@@ -113,11 +113,14 @@ Some of the modules have support for:
 
 Most of the modules are expected to work on:
 
-* Amazon's AMI
+* Amazon Linux
 
 * Fedora
 
-If you need support or better testing for specifi operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). 
+* Mint
+
+
+If you need support or better testing for specific operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. 
 
 
 == CONTINUOUS TESTING
