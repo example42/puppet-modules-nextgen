@@ -24,6 +24,8 @@ The above commands (excluded the first cd and included the last) are done by the
 
         Example42-tools/sync.sh
 
+You can test these modules on a safe environment using the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). Check it out!
+
 
 == FEATURES
 
@@ -70,19 +72,52 @@ An introductory Blog Post: {The next generation of Example42 Puppet modules}[htt
 Generally there's a module for each application and each module is a separated git submodule than can be indipendently retrieved from GitHub.
 There are some special modules or directories with different functions:
 
-* Example42-tools/ is actually not a module. It contains scripts useful for maintenance of the modules. No Puppet code there.
+* Example42-tools/ contains scripts useful for maintenance of the modules. No Puppet code there.
 
 * Example42-documentation/ contains documentation about Example42 Puppet modules and their usage.
 
-* example42/ is a sample project/customer/site specific module. It contains files and subclasses specific to the Example42 test lab. Here are supposed to be placed all the customizations, and ideally this module (or the equivalent with your company name) is one of the few parts where to make changes. 
+* Example42-tutorials/ contains Puppet the markdown code for Puppet Tutorials slides.
 
-* foo/ and foo_whatever/ are sample template modules that are used for scaffolding new modules (that then are customized and enriched according to the specific application)
+* Example42-templates/ contains various differnet templates for modules' layout. The ones with the 42 suffix are used as starting scaffold for these modules.
+
+* example42/ is a sample project/customer/site specific module. It contains files and subclasses specific to the Example42 test lab. Here are supposed to be placed all the customizations, and ideally this module (or the equivalent with your company name) is one of the few parts where to make changes. 
 
 * puppi/ is an Example42 Puppet module that can be used to automate and simplify the deployment of (web) applications and provides a CLI command that exposes most of the information that Puppet has (and defines) about the system. Puppi is a required dependency for all the Example42 modules because it contains some functions used by them, BUT you are not forced to use it. You just have it among your modules to retrieve (via pluginsync) the common functions.
 
 * monitor/ is an Example42 "meta-module" used for monitoring abstraction. It contains the definitions to use different monitor tools for a set of common resources
 
 * firewall/ is an Example42 "meta-module" used for firewalling abstraction.
+
+
+== OPERATING SYSTEMS SUPPORT
+
+Currently the modules are generally tested on the following Operating systems:
+
+* RedHat / Centos versions 5 and 6
+
+* Scientific Linux version 6
+
+* Debian 6
+
+* Ubuntu 10.04 and 12.04
+
+* OpenSuse 12
+
+* Suse Enterprise Linux 11
+
+
+Some of the modules have support for:
+
+* Solaris 11
+
+
+Most of the modules are expected to work on:
+
+* Amazon's AMI
+
+* Fedora
+
+If you need support or better testing for specifi operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). 
 
 
 == CONTINUOUS TESTING
