@@ -226,3 +226,6 @@
 [submodule "exim"]
 	path = exim
 	url = https://github.com/example42/puppet-exim.git
+[submodule "msmtp"]
+	path = msmtp
+	url = https://github.com/zylon-internet/puppet-msmtp.git
