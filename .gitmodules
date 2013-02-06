@@ -229,3 +229,12 @@
 [submodule "msmtp"]
 	path = msmtp
 	url = https://github.com/zylon-internet/puppet-msmtp.git
+[submodule "clvm"]
+	path = clvm
+	url = https://github.com/example42/clvm
+[submodule "multipath"]
+	path = multipath
+	url = https://github.com/example42/multipath
+[submodule "rhcs"]
+	path = rhcs
+	url = https://github.com/example42/rhc
