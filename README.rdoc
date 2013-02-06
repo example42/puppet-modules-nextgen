@@ -24,6 +24,11 @@ The above commands (excluded the first cd and included the last) are done by the
 
         Example42-tools/sync.sh
 
+At times you may need to resync git modules urls. You can do that with:
+
+        git submodule sync
+
+
 You can test these modules on a safe environment using the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. Check it out!
 
 
