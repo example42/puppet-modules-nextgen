@@ -8,7 +8,7 @@ Old and new modules can cohexist on the same setup, but new modules have differe
 == INSTALLATION AND UPDATES
 
 You can get the Next-gen only module set with:
-        git clone --recursive git://github.com/example42/puppet-modules-nextgen.git
+        git clone --recursive https://github.com/example42/puppet-modules-nextgen.git
 
 To update your local copy with the upstream version:
         cd /etc/puppet/modules # Or the directory where's you local copy
