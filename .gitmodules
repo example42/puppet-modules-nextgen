@@ -1,240 +1,240 @@
 [submodule "puppi"]
 	path = puppi
-	url = https://github.com/example42/puppi.git
+	url = ../puppi.git
 [submodule "openssh"]
 	path = openssh
-	url = https://github.com/example42/puppet-openssh.git
+	url = ../puppet-openssh.git
 [submodule "solr"]
 	path = solr
-	url = https://github.com/example42/puppet-solr.git
+	url = ../puppet-solr.git
 [submodule "iptables"]
 	path = iptables
-	url = https://github.com/example42/puppet-iptables.git
+	url = ../puppet-iptables.git
 [submodule "wordpress"]
 	path = wordpress
-	url = https://github.com/example42/puppet-wordpress.git
+	url = ../puppet-wordpress.git
 [submodule "tomcat"]
 	path = tomcat
-	url = https://github.com/example42/puppet-tomcat.git
+	url = ../puppet-tomcat.git
 [submodule "jenkins"]
 	path = jenkins
-	url = https://github.com/example42/puppet-jenkins.git
+	url = ../puppet-jenkins.git
 [submodule "monitor"]
 	path = monitor
-	url = https://github.com/example42/puppet-monitor
+	url = ../puppet-monitor
 [submodule "firewall"]
 	path = firewall
-	url = https://github.com/example42/puppet-firewall
+	url = ../puppet-firewall
 [submodule "splunk"]
 	path = splunk
-	url = https://github.com/example42/puppet-splunk.git
+	url = ../puppet-splunk.git
 [submodule "Example42-tools"]
 	path = Example42-tools
-	url = https://github.com/example42/Example42-tools.git
+	url = ../Example42-tools.git
 [submodule "foo"]
 	path = foo
-	url = https://github.com/example42/puppet-foo
+	url = ../puppet-foo
 [submodule "redis"]
 	path = redis
-	url = https://github.com/example42/puppet-redis.git
+	url = ../puppet-redis.git
 [submodule "haproxy"]
 	path = haproxy
-	url = https://github.com/example42/puppet-haproxy.git
+	url = ../puppet-haproxy.git
 [submodule "nginx"]
 	path = nginx
-	url = https://github.com/example42/puppet-nginx.git
+	url = ../puppet-nginx.git
 [submodule "mysql"]
 	path = mysql
-	url = https://github.com/example42/puppet-mysql.git
+	url = ../puppet-mysql.git
 [submodule "apache"]
 	path = apache
-	url = https://github.com/example42/puppet-apache.git
+	url = ../puppet-apache.git
 [submodule "xinetd"]
 	path = xinetd
-	url = https://github.com/example42/puppet-xinetd
+	url = ../puppet-xinetd
 [submodule "tftp"]
 	path = tftp
-	url = https://github.com/example42/puppet-tftp
+	url = ../puppet-tftp
 [submodule "openntpd"]
 	path = openntpd
-	url = https://github.com/example42/puppet-openntpd
+	url = ../puppet-openntpd
 [submodule "concat"]
 	path = concat
-	url = https://github.com/example42/puppet-concat
+	url = ../puppet-concat
 [submodule "nrpe"]
 	path = nrpe
-	url = https://github.com/example42/puppet-nrpe
+	url = ../puppet-nrpe
 [submodule "puppet"]
 	path = puppet
-	url = https://github.com/example42/puppet-puppet.git
+	url = ../puppet-puppet.git
 [submodule "jboss"]
 	path = jboss
-	url = https://github.com/example42/puppet-jboss.git
+	url = ../puppet-jboss.git
 [submodule "rvm"]
 	path = rvm
-	url = https://github.com/example42/puppet-rvm
+	url = ../puppet-rvm
 [submodule "resolver"]
 	path = resolver
-	url = https://github.com/example42/puppet-resolver.git
+	url = ../puppet-resolver.git
 [submodule "ntp"]
 	path = ntp
-	url = https://github.com/example42/puppet-ntp
+	url = ../puppet-ntp
 [submodule "Example42-documentation"]
 	path = Example42-documentation
-	url = https://github.com/example42/Example42-documentation.git
+	url = ../Example42-documentation.git
 [submodule "orientdb"]
 	path = orientdb
-	url = https://github.com/example42/puppet-orientdb
+	url = ../puppet-orientdb
 [submodule "openvpn"]
 	path = openvpn
-	url = https://github.com/example42/puppet-openvpn
+	url = ../puppet-openvpn
 [submodule "maven"]
 	path = maven
-	url = https://github.com/example42/puppet-maven
+	url = ../puppet-maven
 [submodule "wget"]
 	path = wget
-	url = https://github.com/example42/puppet-wget
+	url = ../puppet-wget
 [submodule "puppetdb"]
 	path = puppetdb
-	url = https://github.com/example42/puppet-puppetdb
+	url = ../puppet-puppetdb
 [submodule "postgresql"]
 	path = postgresql
-	url = https://github.com/example42/puppet-postgresql
+	url = ../puppet-postgresql
 [submodule "foreman"]
 	path = foreman
-	url = https://github.com/example42/puppet-foreman
+	url = ../puppet-foreman
 [submodule "puppetdashboard"]
 	path = puppetdashboard
-	url = https://github.com/example42/puppet-puppetdashboard
+	url = ../puppet-puppetdashboard
 [submodule "sudo"]
 	path = sudo
-	url = https://github.com/example42/puppet-sudo
+	url = ../puppet-sudo
 [submodule "libvirt"]
 	path = libvirt
-	url = https://github.com/example42/puppet-libvirt
+	url = ../puppet-libvirt
 [submodule "munin"]
 	path = munin
-	url = https://github.com/example42/puppet-munin
+	url = ../puppet-munin
 [submodule "postfix"]
 	path = postfix
-	url = https://github.com/example42/puppet-postfix
+	url = ../puppet-postfix
 [submodule "vsftpd"]
 	path = vsftpd
-	url = https://github.com/example42/puppet-vsftpd
+	url = ../puppet-vsftpd
 [submodule "php"]
 	path = php
-	url = https://github.com/example42/puppet-php
+	url = ../puppet-php
 [submodule "yum"]
 	path = yum
-	url = https://github.com/example42/puppet-yum
+	url = ../puppet-yum
 [submodule "example42"]
 	path = example42
-	url = https://github.com/example42/puppet-example42
+	url = ../puppet-example42
 [submodule "icinga"]
 	path = icinga
-	url = https://github.com/example42/puppet-icinga
+	url = ../puppet-icinga
 [submodule "nagios"]
 	path = nagios
-	url = https://github.com/example42/puppet-nagios
+	url = ../puppet-nagios
 [submodule "rsync"]
 	path = rsync
-	url = https://github.com/example42/puppet-rsync
+	url = ../puppet-rsync
 [submodule "pentaho"]
 	path = pentaho
-	url = https://github.com/example42/puppet-pentaho
+	url = ../puppet-pentaho
 [submodule "java"]
 	path = java
-	url = https://github.com/example42/puppet-java
+	url = ../puppet-java
 [submodule "rclocal"]
 	path = rclocal
-	url = https://github.com/example42/puppet-rclocal
+	url = ../puppet-rclocal
 [submodule "tartarus"]
 	path = tartarus
-	url = https://github.com/example42/puppet-tartarus
+	url = ../puppet-tartarus
 [submodule "rsyncssh"]
 	path = rsyncssh
-	url = https://github.com/example42/puppet-rsyncssh
+	url = ../puppet-rsyncssh
 [submodule "pupmod-concat"]
 	path = pupmod-concat
-	url = https://github.com/example42/pupmod-concat
+	url = ../pupmod-concat
 [submodule "activemq"]
 	path = activemq
-	url = https://github.com/example42/puppet-activemq
+	url = ../puppet-activemq
 [submodule "mcollective"]
 	path = mcollective
-	url = https://github.com/example42/puppet-mcollective
+	url = ../puppet-mcollective
 [submodule "vagrant"]
 	path = vagrant
-	url = https://github.com/example42/puppet-vagrant
+	url = ../puppet-vagrant
 [submodule "logstash"]
 	path = logstash
-	url = https://github.com/example42/puppet-logstash
+	url = ../puppet-logstash
 [submodule "user"]
 	path = user
-	url = https://github.com/example42/puppet-user
+	url = ../puppet-user
 [submodule "heartbeat"]
 	path = heartbeat
-	url = https://github.com/example42/puppet-heartbeat
+	url = ../puppet-heartbeat
 [submodule "rsyslog"]
 	path = rsyslog
-	url = https://github.com/example42/puppet-rsyslog
+	url = ../puppet-rsyslog
 [submodule "scmserver"]
 	path = scmserver
-	url = https://github.com/example42/puppet-scmserver
+	url = ../puppet-scmserver
 [submodule "lighttpd"]
 	path = lighttpd
-	url = https://github.com/example42/puppet-lighttpd
+	url = ../puppet-lighttpd
 [submodule "tinc"]
 	path = tinc
-	url = https://github.com/example42/puppet-tinc
+	url = ../puppet-tinc
 [submodule "vim"]
 	path = vim
-	url = https://github.com/example42/puppet-vim
+	url = ../puppet-vim
 [submodule "minimal42"]
 	path = minimal42
-	url = https://github.com/example42/puppet-minimal42
+	url = ../puppet-minimal42
 [submodule "sendmail"]
 	path = sendmail
-	url = https://github.com/example42/puppet-sendmail
+	url = ../puppet-sendmail
 [submodule "django"]
 	path = django
-	url = https://github.com/example42/puppet-django
+	url = ../puppet-django
 [submodule "snmpd"]
 	path = snmpd
-	url = https://github.com/example42/puppet-snmpd
+	url = ../puppet-snmpd
 [submodule "freeradius"]
 	path = freeradius
-	url = https://github.com/example42/puppet-freeradius
+	url = ../puppet-freeradius
 [submodule "proftpd"]
 	path = proftpd
-	url = https://github.com/example42/puppet-proftpd
+	url = ../puppet-proftpd
 [submodule "Example42-templates"]
 	path = Example42-templates
-	url = https://github.com/example42/Example42-templates.git
+	url = ../Example42-templates.git
 [submodule "Example42-tutorials"]
 	path = Example42-tutorials
-	url = https://github.com/example42/Example42-tutorials
+	url = ../Example42-tutorials
 [submodule "apt"]
 	path = apt
-	url = https://github.com/example42/puppet-apt
+	url = ../puppet-apt
 [submodule "dhcpd"]
 	path = dhcpd
-	url = https://github.com/example42/puppet-dhcpd.git
+	url = ../puppet-dhcpd.git
 [submodule "dovecot"]
 	path = dovecot
-	url = https://github.com/example42/puppet-dovecot.git
+	url = ../puppet-dovecot.git
 [submodule "exim"]
 	path = exim
-	url = https://github.com/example42/puppet-exim.git
+	url = ../puppet-exim.git
 [submodule "msmtp"]
 	path = msmtp
-	url = https://github.com/zylon-internet/puppet-msmtp.git
+	url = ../puppet-msmtp.git
 [submodule "clvm"]
 	path = clvm
-	url = https://github.com/example42/puppet-clvm
+	url = ../puppet-clvm
 [submodule "multipath"]
 	path = multipath
-	url = https://github.com/example42/puppet-multipath
+	url = ../puppet-multipath
 [submodule "rhcs"]
 	path = rhcs
-	url = https://github.com/example42/puppet-rhcs
+	url = ../puppet-rhcs
