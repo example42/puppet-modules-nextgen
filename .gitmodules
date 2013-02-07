@@ -238,3 +238,6 @@
 [submodule "rhcs"]
 	path = rhcs
 	url = ../puppet-rhcs
+[submodule "pdns_recursor"]
+	path = pdns_recursor
+	url = https://github.com/zylon-internet/puppet-pdns_recursor
