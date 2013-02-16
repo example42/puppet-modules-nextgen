@@ -253,3 +253,6 @@
 [submodule "zip"]
 	path = zip
 	url = ../puppet-zip
+[submodule "samba"]
+	path = samba
+	url = ../puppet-samba
