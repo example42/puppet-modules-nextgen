@@ -250,3 +250,6 @@
 [submodule "lsb"]
 	path = lsb
 	url = ../puppet-lsb
+[submodule "zip"]
+	path = zip
+	url = ../puppet-zip
