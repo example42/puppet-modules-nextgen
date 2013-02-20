@@ -265,3 +265,6 @@
 [submodule "timezone"]
 	path = timezone
 	url = ../puppet-timezone
+[submodule "sysctl"]
+	path = sysctl
+	url = https://github.com/example42/puppet-sysctl
