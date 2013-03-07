@@ -1,11 +1,11 @@
-= Example42 Puppet Modules 2.0 : The Next Generation
+# Example42 Puppet Modules 2.0 : The Next Generation
 
 This repository collects all the Next-gen Example42 Puppet modules ( http://www.example42.com ), included here as git submodules.
 
 The offical repository of Example42 Puppet modules ( http://github.com/example42/puppet-modules ) is going to contain both old and next-gen modules for a transition period that should last until all the modules are migrated.
 Old and new modules can cohexist on the same setup, but new modules have different usage patterns.
 
-== INSTALLATION AND UPDATES
+## INSTALLATION AND UPDATES
 
 You can get the Next-gen only module set with:
         git clone --recursive https://github.com/example42/puppet-modules-nextgen.git
@@ -32,7 +32,7 @@ At times you may need to resync git modules urls. You can do that with:
 You can test these modules on a safe environment using the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. Check it out!
 
 
-== FEATURES
+## FEATURES
 
 The main features of Example42 Puppet modules (second generation):
 
@@ -61,7 +61,7 @@ The main features of Example42 Puppet modules (second generation):
 * Based on common "foo" templates for easy scaffolding on the modules.
 
 
-== DOCUMENTATION
+## DOCUMENTATION
 
 You can find more documentation in the {Example42-documentation}[https://github.com/example42/Example42-documentation] directory.
 
@@ -72,7 +72,7 @@ A presentation about the features of NextGen modules: {Puppet Modules: A Holisti
 An introductory Blog Post: {The next generation of Example42 Puppet modules}[http://example42.com/?q=NextGen].
 
 
-== SPECIAL MODULES 
+## SPECIAL MODULES 
 
 Generally there's a module for each application and each module is a separated git submodule than can be indipendently retrieved from GitHub.
 There are some special modules or directories with different functions:
@@ -94,7 +94,7 @@ There are some special modules or directories with different functions:
 * firewall/ is an Example42 "meta-module" used for firewalling abstraction.
 
 
-== OPERATING SYSTEMS SUPPORT
+## OPERATING SYSTEMS SUPPORT
 
 Currently the modules are generally tested on the following Operating systems:
 
@@ -128,7 +128,7 @@ Most of the modules are expected to work on:
 If you need support or better testing for specific operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. 
 
 
-== CONTINUOUS TESTING
+## CONTINUOUS TESTING
 
 NextGen modules are tested via Rspec, puppet-lint and puppet doc.
 
