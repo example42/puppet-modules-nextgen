@@ -33,7 +33,6 @@ At times you may need to resync git modules urls. You can do that with:
 
 You can test these modules on a safe environment using the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). Check it out!
 
-
 ## FEATURES
 
 The main features of Example42 Puppet modules (second generation):
@@ -61,7 +60,6 @@ The main features of Example42 Puppet modules (second generation):
 * Integrated **rspec-puppet** tests. Code **puppet-lint** compliant (as much as possible)
 
 * Based on common "foo" templates for **easy scaffolding** on the modules.
-
 
 ## DOCUMENTATION
 
@@ -129,3 +127,8 @@ Most of the modules are expected to work on:
 
 If you need support or better testing for specific operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). 
 
+## CONTRIBUTE
+
+**Pull requests** via GitHub are welcomed, please review the general style and logic of the modules in order to submit consistent patches.
+Do now keep your fork detached from the upstream version, please!
+These modules are intended to be used anywhere **without any modification** of their content: if you have to change them to suit your needs either they have some bugs or missing features or you're using them in the wrong way.
