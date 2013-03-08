@@ -1,16 +1,18 @@
 # Example42 Puppet Modules 2.0 : The Next Generation
 
-This repository collects all the Next-gen Example42 Puppet modules ( http://www.example42.com ), included here as git submodules.
+This repository collects all the Next-gen [Example42](http://www.example42.com) Puppet modules, included here as **git submodules**.
 
-The offical repository of Example42 Puppet modules ( http://github.com/example42/puppet-modules ) is going to contain both old and next-gen modules for a transition period that should last until all the modules are migrated.
-Old and new modules can cohexist on the same setup, but new modules have different usage patterns.
+The **official repository** of Example42 Puppet modules on [GitHub](http://github.com/example42/puppet-modules) currently contains both old and next-gen modules for a transitional period that should last until all the modules are migrated.
+Old and new modules can cohexist on the same setup, but new modules have different usage patterns and are generally recommended.
 
 ## INSTALLATION AND UPDATES
 
 You can get the Next-gen only module set with:
+
         git clone --recursive https://github.com/example42/puppet-modules-nextgen.git
 
 To update your local copy with the upstream version:
+
         cd /etc/puppet/modules # Or the directory where's you local copy
         git pull origin master
         git submodule init
@@ -29,47 +31,47 @@ At times you may need to resync git modules urls. You can do that with:
         git submodule sync
 
 
-You can test these modules on a safe environment using the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. Check it out!
+You can test these modules on a safe environment using the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). Check it out!
 
 
 ## FEATURES
 
 The main features of Example42 Puppet modules (second generation):
 
-* Coherent and standardized structure, logic and usage based on best practices
+* **Coherent** and standardized structure, logic and usage based on best practices
 
-* Cross OS support (main targets are Redhat and Ubuntu derivatives)
+* **Cross OS support** (main targets are Redhat and Ubuntu derivatives)
 
-* Use of parametrized classes and fully qualified variables for Puppet Telly compliance
+* Use of **parametrized classes** and fully qualified variables for Puppet 3 compliance
 
-* Full and coherent API exposure and classes introspection
+* **Full API exposure** and classes introspection
 
-* Separation between core module and user's customizations, no arbitrary logic enforced.
+* Separation between core module and user's customizations, **no arbitrary logic** enforced.
 
-* Optional Puppi support for application deployments and "Puppet knowledge to the CLI"
+* Optional **Puppi support** for application deployments and "Puppet knowledge to the CLI"
 
-* Optional automatic Monitoring support based on an extensible set of tools
+* Optional **automatic Monitoring** support based on an extensible set of tools
 
-* Optional automatic Firewalling support
+* Optional **automatic Firewalling** support
 
-* Decommissiong support: you can remove (almost) whatever you've added
+* **Decommissiong** support: you can remove (almost) whatever you've added
 
-* Complete documentation compliant with PuppetDoc
+* Complete documentation compliant with **PuppetDoc**
 
-* Integrated rspec-puppet tests. Code puppet-lint compliant (as much as possible)
+* Integrated **rspec-puppet** tests. Code **puppet-lint** compliant (as much as possible)
 
-* Based on common "foo" templates for easy scaffolding on the modules.
+* Based on common "foo" templates for **easy scaffolding** on the modules.
 
 
 ## DOCUMENTATION
 
-You can find more documentation in the {Example42-documentation}[https://github.com/example42/Example42-documentation] directory.
+You can find more documentation in the [Example42-documentation](https://github.com/example42/Example42-documentation) directory.
 
-Some Usage examples are in the {example42}[https://github.com/example42/example42] module.
+Some Usage examples are in the [example42](https://github.com/example42/example42) module.
 
-A presentation about the features of NextGen modules: {Puppet Modules: A Holistic approach}[http://www.slideshare.net/Alvagante/puppet-modules-a-holistic-approach-geneva].
+A presentation about the features of NextGen modules: [Puppet Modules: A Holistic approach](http://www.slideshare.net/Alvagante/puppet-modules-a-holistic-approach-geneva).
 
-An introductory Blog Post: {The next generation of Example42 Puppet modules}[http://example42.com/?q=NextGen].
+An introductory Blog Post: [The next generation of Example42 Puppet modules](http://example42.com/?q=NextGen).
 
 
 ## SPECIAL MODULES 
@@ -77,21 +79,21 @@ An introductory Blog Post: {The next generation of Example42 Puppet modules}[htt
 Generally there's a module for each application and each module is a separated git submodule than can be indipendently retrieved from GitHub.
 There are some special modules or directories with different functions:
 
-* Example42-tools/ contains scripts useful for maintenance of the modules. No Puppet code there.
+* `Example42-tools/` contains scripts useful for maintenance of the modules. No Puppet code there.
 
-* Example42-documentation/ contains documentation about Example42 Puppet modules and their usage.
+* `Example42-documentation/` contains documentation about Example42 Puppet modules and their usage.
 
-* Example42-tutorials/ contains Puppet the markdown code for Puppet Tutorials slides.
+* `Example42-tutorials/` contains Puppet the markdown code for Puppet Tutorials slides.
 
-* Example42-templates/ contains various differnet templates for modules' layout. The ones with the 42 suffix are used as starting scaffold for these modules.
+* `Example42-templates/` contains various differnet templates for modules' layout. The ones with the 42 suffix are used as starting scaffold for these modules.
 
-* example42/ is a sample project/customer/site specific module. It contains files and subclasses specific to the Example42 test lab. Here are supposed to be placed all the customizations, and ideally this module (or the equivalent with your company name) is one of the few parts where to make changes. 
+* `example42/` is a sample project/customer/site specific module. It contains files and subclasses specific to the Example42 test lab. Here are supposed to be placed all the customizations, and ideally this module (or the equivalent with your company name) is one of the few parts where to make changes. 
 
-* puppi/ is an Example42 Puppet module that can be used to automate and simplify the deployment of (web) applications and provides a CLI command that exposes most of the information that Puppet has (and defines) about the system. Puppi is a required dependency for all the Example42 modules because it contains some functions used by them, BUT you are not forced to use it. You just have it among your modules to retrieve (via pluginsync) the common functions.
+* `puppi/` is an Example42 Puppet module that can be used to automate and simplify the deployment of (web) applications and provides a CLI command that exposes most of the information that Puppet has (and defines) about the system. Puppi is a required dependency for all the Example42 modules because it contains some functions used by them, BUT you are not forced to use it. You just have it among your modules to retrieve (via pluginsync) the common functions.
 
-* monitor/ is an Example42 "meta-module" used for monitoring abstraction. It contains the definitions to use different monitor tools for a set of common resources
+* `monitor/` is an Example42 "meta-module" used for monitoring abstraction. It contains the definitions to use different monitor tools for a set of common resources
 
-* firewall/ is an Example42 "meta-module" used for firewalling abstraction.
+* `firewall/` is an Example42 "meta-module" used for firewalling abstraction.
 
 
 ## OPERATING SYSTEMS SUPPORT
@@ -106,7 +108,7 @@ Currently the modules are generally tested on the following Operating systems:
 
 * Ubuntu 10.04 and 12.04
 
-* OpenSuse 12
+* OpenSuse 11 and 12
 
 * Suse Enterprise Linux 11
 
@@ -125,14 +127,5 @@ Most of the modules are expected to work on:
 * Mint
 
 
-If you need support or better testing for specific operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the {Example42 Puppet Playground}[https://github.com/example42/puppet-playground]. 
-
-
-## CONTINUOUS TESTING
-
-NextGen modules are tested via Rspec, puppet-lint and puppet doc.
-
-Example42 Jenkins: http://www.example42.com/jenkins/
-
-Travis (NextGen only set) {<img src="http://travis-ci.org/example42/puppet-modules-nextgen.png"/>}[http://travis-ci.org/#!/example42/puppet-modules-nextgen]
+If you need support or better testing for specific operating systems and versions the best thing you can do is to provide a usable Vagrant Base box for the [Example42 Puppet Playground](https://github.com/example42/puppet-playground). 
 
