@@ -268,3 +268,6 @@
 [submodule "sysctl"]
 	path = sysctl
 	url = ../puppet-sysctl
+[submodule "perl"]
+	path = perl
+	url = ../puppet-perl
