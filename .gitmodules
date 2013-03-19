@@ -271,3 +271,6 @@
 [submodule "perl"]
 	path = perl
 	url = ../puppet-perl
+[submodule "stdlib"]
+	path = stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
