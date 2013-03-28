@@ -271,3 +271,6 @@
 [submodule "perl"]
 	path = perl
 	url = ../puppet-perl
+[submodule "hosts"]
+	path = hosts
+	url = ../puppet-hosts.git
