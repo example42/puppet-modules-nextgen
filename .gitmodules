@@ -273,7 +273,10 @@
 	url = ../puppet-perl
 [submodule "hosts"]
 	path = hosts
-	url = ../puppet-hosts.git
+	url = ../puppet-hosts
 [submodule "svn"]
 	path = svn
-	url = https://github.com/example42/puppet-svn.git
+	url = ../puppet-svn
+[submodule "mongodb"]
+	path = mongodb
+	url = ../puppet-mongodb
