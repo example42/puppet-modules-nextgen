@@ -1,24 +1,24 @@
 [submodule "puppi"]
 	path = puppi
-	url = ../puppi.git
+	url = ../puppi
 [submodule "openssh"]
 	path = openssh
-	url = ../puppet-openssh.git
+	url = ../puppet-openssh
 [submodule "solr"]
 	path = solr
-	url = ../puppet-solr.git
+	url = ../puppet-solr
 [submodule "iptables"]
 	path = iptables
-	url = ../puppet-iptables.git
+	url = ../puppet-iptables
 [submodule "wordpress"]
 	path = wordpress
-	url = ../puppet-wordpress.git
+	url = ../puppet-wordpress
 [submodule "tomcat"]
 	path = tomcat
-	url = ../puppet-tomcat.git
+	url = ../puppet-tomcat
 [submodule "jenkins"]
 	path = jenkins
-	url = ../puppet-jenkins.git
+	url = ../puppet-jenkins
 [submodule "monitor"]
 	path = monitor
 	url = ../puppet-monitor
@@ -27,28 +27,28 @@
 	url = ../puppet-firewall
 [submodule "splunk"]
 	path = splunk
-	url = ../puppet-splunk.git
+	url = ../puppet-splunk
 [submodule "Example42-tools"]
 	path = Example42-tools
-	url = ../Example42-tools.git
+	url = ../Example42-tools
 [submodule "foo"]
 	path = foo
 	url = ../puppet-foo
 [submodule "redis"]
 	path = redis
-	url = ../puppet-redis.git
+	url = ../puppet-redis
 [submodule "haproxy"]
 	path = haproxy
-	url = ../puppet-haproxy.git
+	url = ../puppet-haproxy
 [submodule "nginx"]
 	path = nginx
-	url = ../puppet-nginx.git
+	url = ../puppet-nginx
 [submodule "mysql"]
 	path = mysql
-	url = ../puppet-mysql.git
+	url = ../puppet-mysql
 [submodule "apache"]
 	path = apache
-	url = ../puppet-apache.git
+	url = ../puppet-apache
 [submodule "xinetd"]
 	path = xinetd
 	url = ../puppet-xinetd
@@ -66,22 +66,22 @@
 	url = ../puppet-nrpe
 [submodule "puppet"]
 	path = puppet
-	url = ../puppet-puppet.git
+	url = ../puppet-puppet
 [submodule "jboss"]
 	path = jboss
-	url = ../puppet-jboss.git
+	url = ../puppet-jboss
 [submodule "rvm"]
 	path = rvm
 	url = ../puppet-rvm
 [submodule "resolver"]
 	path = resolver
-	url = ../puppet-resolver.git
+	url = ../puppet-resolver
 [submodule "ntp"]
 	path = ntp
 	url = ../puppet-ntp
 [submodule "Example42-documentation"]
 	path = Example42-documentation
-	url = ../Example42-documentation.git
+	url = ../Example42-documentation
 [submodule "orientdb"]
 	path = orientdb
 	url = ../puppet-orientdb
@@ -210,7 +210,7 @@
 	url = ../puppet-proftpd
 [submodule "Example42-templates"]
 	path = Example42-templates
-	url = ../Example42-templates.git
+	url = ../Example42-templates
 [submodule "Example42-tutorials"]
 	path = Example42-tutorials
 	url = ../Example42-tutorials
@@ -219,16 +219,16 @@
 	url = ../puppet-apt
 [submodule "dhcpd"]
 	path = dhcpd
-	url = ../puppet-dhcpd.git
+	url = ../puppet-dhcpd
 [submodule "dovecot"]
 	path = dovecot
-	url = ../puppet-dovecot.git
+	url = ../puppet-dovecot
 [submodule "exim"]
 	path = exim
-	url = ../puppet-exim.git
+	url = ../puppet-exim
 [submodule "msmtp"]
 	path = msmtp
-	url = ../puppet-msmtp.git
+	url = ../puppet-msmtp
 [submodule "clvm"]
 	path = clvm
 	url = ../puppet-clvm
@@ -280,3 +280,6 @@
 [submodule "mongodb"]
 	path = mongodb
 	url = ../puppet-mongodb
+[submodule "exported_vars"]
+	path = exported_vars
+	url = ../puppet-exported_vars
