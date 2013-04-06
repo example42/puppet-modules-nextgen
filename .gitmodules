@@ -286,3 +286,6 @@
 [submodule "pdns_recursor"]
 	path = pdns_recursor
 	url = https://github.com/zylon-internet/puppet-pdns_recursor
+[submodule "c_icap"]
+	path = c_icap
+	url = https://github.com/sathieu/puppet-c_icap
