@@ -289,3 +289,9 @@
 [submodule "c_icap"]
 	path = c_icap
 	url = https://github.com/sathieu/puppet-c_icap
+[submodule "git"]
+	path = git
+	url = ../puppet-git
+[submodule "elasticsearch"]
+	path = elasticsearch
+	url = ../puppet-elasticsearch
