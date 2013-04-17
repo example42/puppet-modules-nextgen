@@ -295,3 +295,6 @@
 [submodule "elasticsearch"]
 	path = elasticsearch
 	url = ../puppet-elasticsearch
+[submodule "unicorn"]
+	path = unicorn
+	url = ../puppet-unicorn
