@@ -298,3 +298,9 @@
 [submodule "unicorn"]
 	path = unicorn
 	url = ../puppet-unicorn
+[submodule "pam"]
+	path = pam
+	url = ../puppet-pam
+[submodule "auth"]
+	path = auth
+	url = ../puppet-auth
