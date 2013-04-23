@@ -304,3 +304,6 @@
 [submodule "auth"]
 	path = auth
 	url = ../puppet-auth
+[submodule "graylog2"]
+	path = graylog2
+	url = https://github.com/example42/puppet-graylog2
