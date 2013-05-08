@@ -1,4 +1,4 @@
-# Example42 Puppet Modules 2.0 : The Next Generation
+# Example42 Puppet Modules 2.0 : NextGen
 
 Released under the terms of Apache2 licence.
 
