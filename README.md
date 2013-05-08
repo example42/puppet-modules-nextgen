@@ -1,5 +1,14 @@
 # Example42 Puppet Modules 2.0 : The Next Generation
 
+Released under the terms of Apache2 licence.
+
+Copyright Alessandro Franceschi / Lab42 (and specific commits authors)
+
+Official website: [http://www.example42.com](http://www.example42.com)
+
+Official Support forum: [Google Groups](https://groups.google.com/forum/#!forum/example42-puppet-modules)
+
+
 This repository collects all the Next-gen [Example42](http://www.example42.com) Puppet modules, included here as **git submodules**.
 
 The **official repository** of Example42 Puppet modules on [GitHub](http://github.com/example42/puppet-modules) currently contains both old and next-gen modules for a transitional period that should last until all the modules are migrated.
