@@ -1,4 +1,13 @@
-# Example42 Puppet Modules 2.0 : The Next Generation
+# Example42 Puppet Modules 2.0 : NextGen
+
+Released under the terms of Apache2 licence.
+
+Copyright Alessandro Franceschi / Lab42 (and specific commits authors)
+
+Official website: [http://www.example42.com](http://www.example42.com)
+
+Official Support forum: [Google Groups](https://groups.google.com/forum/#!forum/example42-puppet-modules)
+
 
 This repository collects all the Next-gen [Example42](http://www.example42.com) Puppet modules, included here as **git submodules**.
 
@@ -61,7 +70,7 @@ The main features of Example42 Puppet modules (second generation):
 
 * Based on common "foo" templates for **easy scaffolding** on the modules.
 
-## DOCUMENTATION
+## DOCUMENTATION AND SUPPORT
 
 You can find more documentation in the [Example42-documentation](https://github.com/example42/Example42-documentation) directory.
 
@@ -70,6 +79,8 @@ Some Usage examples are in the [example42](https://github.com/example42/example4
 A presentation about the features of NextGen modules: [Puppet Modules: A Holistic approach](http://www.slideshare.net/Alvagante/puppet-modules-a-holistic-approach-geneva).
 
 An introductory Blog Post: [The next generation of Example42 Puppet modules](http://example42.com/?q=NextGen).
+
+The official Support forum is on [Google Groups](https://groups.google.com/forum/#!forum/example42-puppet-modules) use it for questions and discussions.
 
 
 ## SPECIAL MODULES 
@@ -130,5 +141,7 @@ If you need support or better testing for specific operating systems and version
 ## CONTRIBUTE
 
 **Pull requests** via GitHub are welcomed, please review the general style and logic of the modules in order to submit consistent patches.
-Do now keep your fork detached from the upstream version, please!
+
+Do not keep your fork detached from the upstream version, please!
+
 These modules are intended to be used anywhere **without any modification** of their content: if you have to change them to suit your needs either they have some bugs or missing features or you're using them in the wrong way.

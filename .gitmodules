@@ -306,10 +306,16 @@
 	url = ../puppet-auth
 [submodule "graylog2"]
 	path = graylog2
-	url = https://github.com/example42/puppet-graylog2
+	url = ../puppet-graylog2
 [submodule "profile"]
 	path = profile
-	url = https://github.com/example42/puppet-profile
+	url = ../puppet-profile
+[submodule "bundler"]
+	path = bundler
+	url = ../puppet-bundler
+[submodule "ruby"]
+	path = ruby
+	url = ../puppet-ruby
 [submodule "newrelic"]
 	path = newrelic
-	url = https://github.com/example42/puppet-newrelic
+	url = ../puppet-newrelic
