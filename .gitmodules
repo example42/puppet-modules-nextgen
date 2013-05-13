@@ -310,3 +310,6 @@
 [submodule "profile"]
 	path = profile
 	url = https://github.com/example42/puppet-profile
+[submodule "newrelic"]
+	path = newrelic
+	url = https://github.com/example42/puppet-newrelic
