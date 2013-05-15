@@ -319,3 +319,6 @@
 [submodule "newrelic"]
 	path = newrelic
 	url = ../puppet-newrelic
+[submodule "nfs"]
+	path = nfs
+	url = ../puppet-nfs
