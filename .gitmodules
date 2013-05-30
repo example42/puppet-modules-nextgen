@@ -322,3 +322,6 @@
 [submodule "nfs"]
 	path = nfs
 	url = ../puppet-nfs
+[submodule "monit"]
+	path = monit
+	url = ../monit
