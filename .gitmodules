@@ -328,3 +328,6 @@
 [submodule "nut"]
 	path = nut
 	url = https://github.com/netmanagers/puppet-nut.git
+[submodule "dnsmasq"]
+	path = dnsmasq
+	url = https://github.com/netmanagers/puppet-dnsmasq.git
