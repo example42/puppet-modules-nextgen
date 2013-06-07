@@ -325,3 +325,6 @@
 [submodule "monit"]
 	path = monit
 	url = ../puppet-monit
+[submodule "nut"]
+	path = nut
+	url = https://github.com/netmanagers/puppet-nut.git
