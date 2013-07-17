@@ -340,3 +340,6 @@
 [submodule "inittab"]
 	path = inittab
 	url = ../puppet-inittab.git
+[submodule "varnish"]
+	path = varnish
+	url = https://github.com/netmanagers/puppet-varnish
