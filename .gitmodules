@@ -349,3 +349,9 @@
 [submodule "kibana"]
 	path = kibana
 	url = https://github.com/example42/puppet-kibana
+[submodule "stdlib"]
+	path = stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib
+[submodule "stack"]
+	path = stack
+	url = https://github.com/example42/puppet-stack
