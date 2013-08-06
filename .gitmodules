@@ -339,7 +339,7 @@
 	url = https://github.com/netmanagers/puppet-ssmtp.git
 [submodule "inittab"]
 	path = inittab
-	url = ../puppet-inittab.git
+	url = ../puppet-inittab
 [submodule "varnish"]
 	path = varnish
 	url = https://github.com/netmanagers/puppet-varnish
@@ -354,4 +354,19 @@
 	url = https://github.com/puppetlabs/puppetlabs-stdlib
 [submodule "stack"]
 	path = stack
-	url = https://github.com/example42/puppet-stack
+	url = ../puppet-stack
+[submodule "quantum"]
+	path = quantum
+	url = ../puppet-quantum
+[submodule "nova"]
+	path = nova
+	url = ../puppet-nova
+[submodule "openvswitch"]
+	path = openvswitch
+	url = ../puppet-openvswitch
+[submodule "glance"]
+	path = glance
+	url = ../puppet-glance
+[submodule "ceph"]
+	path = ceph
+	url = ../puppet-ceph
