@@ -370,3 +370,6 @@
 [submodule "ceph"]
 	path = ceph
 	url = ../puppet-ceph
+[submodule "bluepill"]
+	path = bluepill
+	url = https://github.com/mburger/puppet-bluepill
