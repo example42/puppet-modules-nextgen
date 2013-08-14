@@ -373,3 +373,6 @@
 [submodule "bluepill"]
 	path = bluepill
 	url = https://github.com/mburger/puppet-bluepill
+[submodule "eye"]
+	path = eye
+	url = https://github.com/mburger/puppet-eye
