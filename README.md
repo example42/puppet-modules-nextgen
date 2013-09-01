@@ -16,6 +16,12 @@ Old and new modules can cohexist on the same setup, but new modules have differe
 
 ## INSTALLATION AND UPDATES
 
+From Semprember 2013 most of the modules are published, are regularly updated, on the Puppet Forge.
+
+Use Puppet module tool to query and install Example42 modules:
+
+        puppet module search example42
+
 You can get the Next-gen only module set with:
 
         git clone --recursive https://github.com/example42/puppet-modules-nextgen.git
