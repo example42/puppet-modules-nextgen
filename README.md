@@ -16,9 +16,9 @@ Old and new modules can cohexist on the same setup, but new modules have differe
 
 ## INSTALLATION AND UPDATES
 
-From Semprember 2013 most of the modules are published, are regularly updated, on the Puppet Forge.
+From September 2013 most of the modules are published, and regularly updated, on the **Puppet Forge**.
 
-Use Puppet module tool to query and install Example42 modules:
+Use the Puppet module tool to query and install Example42 modules:
 
         puppet module search example42
 
