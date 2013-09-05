@@ -382,3 +382,6 @@
 [submodule "bind"]
 	path = bind
 	url = https://github.com/netmanagers/puppet-bind
+[submodule "puppetdbquery"]
+	path = puppetdbquery
+	url = https://github.com/dalen/puppet-puppetdbquery
