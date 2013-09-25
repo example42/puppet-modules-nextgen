@@ -385,3 +385,6 @@
 [submodule "puppetdbquery"]
 	path = puppetdbquery
 	url = https://github.com/dalen/puppet-puppetdbquery
+[submodule "tcpwrappers"]
+	path = tcpwrappers
+	url = https://github.com/netmanagers/puppet-tcpwrappers
