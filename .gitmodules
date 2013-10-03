@@ -390,4 +390,4 @@
 	url = https://github.com/netmanagers/puppet-tcpwrappers
 [submodule "stunnel"]
 	path = stunnel
-	url = https://github.com/victorgp/stunnel
+	url = https://github.com/victorgp/puppet-stunnel
