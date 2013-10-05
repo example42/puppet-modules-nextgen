@@ -58,9 +58,6 @@
 [submodule "openntpd"]
 	path = openntpd
 	url = ../puppet-openntpd
-[submodule "concat"]
-	path = concat
-	url = ../puppet-concat
 [submodule "nrpe"]
 	path = nrpe
 	url = ../puppet-nrpe
