@@ -8,7 +8,6 @@ jenkins
 monitor
 firewall
 splunk
-foo
 redis
 haproxy
 nginx
@@ -60,7 +59,6 @@ scmserver
 lighttpd
 tinc
 vim
-minimal42
 sendmail
 django
 snmpd
