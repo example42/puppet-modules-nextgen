@@ -28,9 +28,6 @@
 [submodule "splunk"]
 	path = splunk
 	url = ../puppet-splunk
-[submodule "Example42-tools"]
-	path = Example42-tools
-	url = ../Example42-tools
 [submodule "foo"]
 	path = foo
 	url = ../puppet-foo
@@ -208,9 +205,6 @@
 [submodule "Example42-templates"]
 	path = Example42-templates
 	url = ../Example42-templates
-[submodule "Example42-tutorials"]
-	path = Example42-tutorials
-	url = ../Example42-tutorials
 [submodule "apt"]
 	path = apt
 	url = ../puppet-apt
@@ -280,12 +274,6 @@
 [submodule "exported_vars"]
 	path = exported_vars
 	url = ../puppet-exported_vars
-[submodule "pdns_recursor"]
-	path = pdns_recursor
-	url = https://github.com/zylon-internet/puppet-pdns_recursor
-[submodule "c_icap"]
-	path = c_icap
-	url = https://github.com/sathieu/puppet-c_icap
 [submodule "git"]
 	path = git
 	url = ../puppet-git
@@ -322,33 +310,12 @@
 [submodule "monit"]
 	path = monit
 	url = ../puppet-monit
-[submodule "nut"]
-	path = nut
-	url = https://github.com/netmanagers/puppet-nut.git
-[submodule "dnsmasq"]
-	path = dnsmasq
-	url = https://github.com/netmanagers/puppet-dnsmasq.git
-[submodule "ddclient"]
-	path = ddclient
-	url = https://github.com/netmanagers/puppet-ddclient.git
-[submodule "ssmtp"]
-	path = ssmtp
-	url = https://github.com/netmanagers/puppet-ssmtp.git
 [submodule "inittab"]
 	path = inittab
 	url = ../puppet-inittab
-[submodule "varnish"]
-	path = varnish
-	url = https://github.com/netmanagers/puppet-varnish
 [submodule "zabbix_agent"]
 	path = zabbix_agent
 	url = ../puppet-zabbix_agent
-[submodule "kibana"]
-	path = kibana
-	url = https://github.com/example42/puppet-kibana
-[submodule "stdlib"]
-	path = stdlib
-	url = https://github.com/puppetlabs/puppetlabs-stdlib
 [submodule "stack"]
 	path = stack
 	url = ../puppet-stack
@@ -367,27 +334,3 @@
 [submodule "ceph"]
 	path = ceph
 	url = ../puppet-ceph
-[submodule "bluepill"]
-	path = bluepill
-	url = https://github.com/mburger/puppet-bluepill
-[submodule "eye"]
-	path = eye
-	url = https://github.com/mburger/puppet-eye
-[submodule "bacula"]
-	path = bacula
-	url = https://github.com/netmanagers/puppet-bacula
-[submodule "bind"]
-	path = bind
-	url = https://github.com/netmanagers/puppet-bind
-[submodule "puppetdbquery"]
-	path = puppetdbquery
-	url = https://github.com/dalen/puppet-puppetdbquery
-[submodule "tcpwrappers"]
-	path = tcpwrappers
-	url = https://github.com/netmanagers/puppet-tcpwrappers
-[submodule "stunnel"]
-	path = stunnel
-	url = https://github.com/victorgp/puppet-stunnel
-[submodule "concat"]
-	path = concat
-	url = https://github.com/puppetlabs/puppetlabs-concat
