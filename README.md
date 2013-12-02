@@ -151,3 +151,7 @@ If you need support or better testing for specific operating systems and version
 Do not keep your fork detached from the upstream version, please!
 
 These modules are intended to be used anywhere **without any modification** of their content: if you have to change them to suit your needs either they have some bugs or missing features or you're using them in the wrong way.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/example42/puppet-modules-nextgen/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
